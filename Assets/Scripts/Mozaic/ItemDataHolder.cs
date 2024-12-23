@@ -14,6 +14,9 @@ namespace Mozaic
         public ItemData GetRandomItem()
         {
             var randomIndex = Random.Range(0, _itemDatas.Count);
+            
+            var itemDataToReturn = _itemDatas[randomIndex];
+            itemDataToReturn.ColorType = _colors[randomIndex].ColorType;
             return _itemDatas[randomIndex];
         }
 
@@ -28,6 +31,19 @@ namespace Mozaic
             }
 
             return Color.white;
+        }
+
+        public Sprite GetSpriteByType(FigureType type)
+        {
+            foreach (var itemData in _itemDatas)
+            {
+                if (itemData.FigureType == type)
+                {
+                    return itemData.Sprite;
+                }
+            }
+
+            return null;
         }
     }
 
@@ -56,7 +72,8 @@ namespace Mozaic
         Triangle,
         Oval,
         Moon,
-        Circle
+        Circle,
+        None
     }
     
     public enum ColorType
@@ -69,6 +86,7 @@ namespace Mozaic
         Blue,
         Beig,
         Black,
-        Orange
+        Orange,
+        None
     }
 }
