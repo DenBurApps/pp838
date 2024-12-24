@@ -35,6 +35,7 @@ namespace Puzzle
         Coral,
         Orange,
         Yellow,
-        White
+        White,
+        Empty
     }
 }

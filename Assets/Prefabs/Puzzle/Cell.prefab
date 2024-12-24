@@ -209,6 +209,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f52723a3cb0eba4e96566f0a58b20ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _emptyColor: {r: 0, g: 0, b: 0, a: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _internalImage: {fileID: 571274327800194357}
+  _outsideImage: {fileID: 0}
   _button: {fileID: 9088024571722526009}
   _cellDataHolder: {fileID: 0}
+  _colorTypes: 0
