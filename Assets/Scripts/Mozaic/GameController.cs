@@ -220,6 +220,7 @@ namespace Mozaic
         private void OnVerifyClicked()
         {
             int correctCount = 0;
+            _repeatText.enabled = false;
 
             for (int i = 0; i < _currentDifficulty; i++)
             {
